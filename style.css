@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(oszi.jpg);
+    color: #333;
+}
+
+#rulesContainer {
+    width: 80%;
+    margin: 0 auto;
+    
+    background: rgb(236, 214, 192);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: ridge 9px rgb(169, 127, 88);
+    margin-top: 10%;
+}
+
+button {
+    padding: 10px 20px;
+    border: dotted black;
+    border-radius: 5px;
+    background-color: rgb(176, 140, 92);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#startButton {
+    margin-left: 0;
+}
+
+button:hover {
+    background-color: #ff6200;
+}
+li{
+    font-family: cursive;
+   
+
+}
+span{
+    color: rgb(187, 94, 13);
+    font-weight: bold;
+    
+}
+p{
+    font-family: cursive ;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.gomb {
+    margin-top: 20px;
+    margin-left: 38%;
+}
+
+
+

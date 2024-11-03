@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="icon" type="image/x-icon" href="kep/kerdo.png">
+    <style>
+    body {
+      font-family: "Sofia", sans-serif;
+      font-size: 25px;
+    }
+    </style>
+    <title>Játék Szabályai</title>
+</head>
+<body>
+    <div id="rulesContainer">
+        <h1 class="font-effect-fire">Kérdezz-Felelek Játék Szabályai</h1>
+        <p>Üdvözöllek Játékos a Quiz4You-ban! A játék során a ezek szabályok vonatkoznak rád, ezek betartásával jó szórakozást kivánok!</p>
+        <ul>
+            <li><span>3</span> életed van a játék során.</li>
+            <li>A <span>20.</span>, <span>40.</span>, <span>60.</span> és <span>80-dik</span> kérdésnél visszakaphatsz egy életet, de csak ha helyesen válaszolsz.</li>
+            <li>Összesen <span>100</span> kérdést kapsz, minden kérdéshez <span>4</span> válaszlehetőséggel.</li>
+            <li>Ha hibásan válaszolsz, elveszítesz egy életet, és a következő kérdésre lépsz. (Ha elfogy az életed a játéknak vége.)</li>
+            <li>A segítő gombokkal kaphatsz tippelési, felezési és telefonos segítséget, illetve egy életet vissza kaphatsz.</li>
+            <li>Az utolsó kérdésre élettől függetlenűl tudnod kell a helyes választ különben vége.</li>
+        </ul>
+        <div class="gomb">
+        <button id="startButton" onclick="startGameEZ()">Könnyű</button>
+        <button id="startButton" onclick="startGameNORMAL()">Normál</button>
+        <button id="startButton" onclick="startGameHARD()">Nehéz</button>
+    </div>
+    </div>
+    <script>
+        function startGameEZ() {
+            window.location.href = "ez.html"; 
+        }
+        
+        function startGameNORMAL() {
+            window.location.href = "jatek.html"; 
+        }
+        
+        function startGameHARD() {
+            window.location.href = "nehez.html"; 
+        }
+
+    </script>
+</body>
+</html>

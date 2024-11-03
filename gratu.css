@@ -1,0 +1,46 @@
+body{
+    background-image: url(oszi.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+div{
+    background-color: bisque;
+    height: 50%;
+    width: 70%;
+    border: ridge rgba(193, 114, 58, 0.666) 9px ;
+    
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgba(237, 125, 54, 0.786);
+    border-radius: 10px;   
+    margin-top: 60px;
+}
+button:hover{
+    color: black;
+    background-color: rgba(103, 40, 8, 0.471);
+}
+p {
+    font-size: 24px;
+    font-family: cursive;
+    
+    margin: auto;
+}
+
+h2 {
+    font-size: 48px;
+    color: green;
+    font-family:cursive;
+}
+script{
+    width: 100%;
+}

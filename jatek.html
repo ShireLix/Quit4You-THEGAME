@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz4You</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="icon" type="image/x-icon" href="kep/kerdo.png">
+    <style>
+    body {
+      font-family: cursive;
+      font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <img id="gif" src="kep/cat-space.gif" alt="nyan cat" style="width:48px;height:48px;">
+   
+    <div class="container">
+        <div id="header">
+        <br>
+            <h1 class="font-effect-neon">Quiz4You</h1>
+            <hr>
+            <div id="questionNumber"></div>
+        </div>
+<br>
+        <div id="questionContainer">
+            <div id="question"></div>
+            
+            <img id="questionImage" src="" alt="Kép" style="display: none; max-width: 20%;">
+                <br>
+            <div id="answers">
+                <button id="answer0" class="answer" onclick="checkAnswer(0)"></button>
+                <button id="answer1" class="answer" onclick="checkAnswer(1)"></button>
+                <button id="answer2" class="answer" onclick="checkAnswer(2)"></button>
+                <button id="answer3" class="answer" onclick="checkAnswer(3)"></button>
+            </div>
+
+
+            
+            <div id="lifelineContainer">
+                <button id="felezesButton" onclick="useLifeline('felezes')">Felezés</button>
+                <button id="telefonButton" onclick="useLifeline('telefon')">Telefon</button>
+                <button id="tippButton" onclick="useLifeline('tipp')">Tipp</button>
+                <button id="extraLifeButton" onclick="useExtraLife()">Extra élet</button>
+                
+            </div>
+
+            <div id="lives">
+                <img id="life1" src="kep/kisebbmint3.png" alt="Élet">
+                <img id="life2" src="kep/kisebbmint3.png" alt="Élet">
+                <img id="life3" src="kep/kisebbmint3.png" alt="Élet">
+            </div>
+        </div>
+    </div>
+
+    <img id="gif" src="kep/cat-space.gif" alt="nyan cat" style="width:48px;height:48px;">
+    
+    <script src="script.js"></script>
+</body>
+</html>

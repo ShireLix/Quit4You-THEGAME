@@ -1,0 +1,38 @@
+body{
+background-color: black;
+height: 100%;
+background-image: url(aranyhat.jpg);}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 10%;
+    background-color: white;
+    border-radius: 100%;
+    border: dotted gold 6px;
+  }
+h1{
+    color: aliceblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: gold;
+    border-radius: 10px;   
+    margin-top: 60px;
+    margin-left: 48%;
+    margin-bottom: 80%;
+}
+script{
+    width: 100%;
+}
