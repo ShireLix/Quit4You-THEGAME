@@ -551,13 +551,13 @@ let questions = [
 questions = removeDuplicates(questions);
 
 let currentQuestionIndex = 0;
-let lives = 3; // Életek száma
+let lives = 3; 
 
 function startGame() {
     currentQuestionIndex = 0; 
     shuffleQuestions(questions); 
     kerdesekmegjelen();
-    updateLives(); // Frissítjük az élet kijelzést
+    updateLives(); 
 }
 
 function removeDuplicates(array) {
@@ -602,7 +602,7 @@ function kerdesekmegjelen() {
     questionElement.innerText = currentQuestion.question;
     questionNumberElement.innerText = `Kérdés ${currentQuestionIndex + 1} / ${questions.length}`;
 
-    // Handle image display
+    
     if (currentQuestion.image) {
         imageElement.src = currentQuestion.image;
         imageElement.style.display = "block";
@@ -650,8 +650,8 @@ function checkAnswer(selectedAnswerIndex) {
         }
     } else {
         document.getElementById(`answer${selectedAnswerIndex}`).style.backgroundColor = "red";
-        lives--; // Csökkentjük az életek számát
-        updateLives(); // Frissítjük az élet kijelzést
+        lives--; 
+        updateLives(); 
         if (lives <= 0) {
             endGame(false); 
         } else {
@@ -672,9 +672,9 @@ function updateLives() {
 
     lifeElements.forEach((element, index) => {
         if (index < lives) {
-            element.style.display = "inline"; // Élet látható
+            element.style.display = "inline"; 
         } else {
-            element.style.display = "none"; // Élet eltüntetve
+            element.style.display = "none"; 
         }
     });
 }
@@ -688,7 +688,7 @@ function endGame(won) {
 }
 
 function ujjatek() {
-    lives = 3; // Visszaállítjuk az életek számát
+    lives = 3; 
     currentQuestionIndex = 0;
     startGame();
 }
