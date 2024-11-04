@@ -623,7 +623,6 @@ function kerdesekmegjelen() {
     questionElement.innerText = currentQuestion.question;
     questionNumberElement.innerText = `Kérdés       ${currentQuestionIndex + 1} / ${questions.length}`;
 
-    // Handle image display
     if (currentQuestion.image) {
         imageElement.src = currentQuestion.image;
         imageElement.style.display = "block";
